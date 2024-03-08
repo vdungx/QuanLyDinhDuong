@@ -1,0 +1,13 @@
+D:\projectC#\Test_1\bin\Debug\Test_1.exe.config
+D:\projectC#\Test_1\bin\Debug\Test_1.exe
+D:\projectC#\Test_1\bin\Debug\Test_1.pdb
+D:\projectC#\Test_1\bin\Debug\FontAwesome.Sharp.dll
+D:\projectC#\Test_1\obj\Debug\Test_1.csproj.AssemblyReference.cache
+D:\projectC#\Test_1\obj\Debug\Test_1.Form1.resources
+D:\projectC#\Test_1\obj\Debug\Test_1.Properties.Resources.resources
+D:\projectC#\Test_1\obj\Debug\Test_1.csproj.GenerateResource.cache
+D:\projectC#\Test_1\obj\Debug\Test_1.csproj.CoreCompileInputs.cache
+D:\projectC#\Test_1\obj\Debug\Test_1.csproj.CopyComplete
+D:\projectC#\Test_1\obj\Debug\Test_1.exe
+D:\projectC#\Test_1\obj\Debug\Test_1.pdb
+D:\projectC#\Test_1\obj\Debug\Test_1.FormCon1.resources

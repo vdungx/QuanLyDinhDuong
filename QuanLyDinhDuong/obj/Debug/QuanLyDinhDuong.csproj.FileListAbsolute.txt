@@ -1,0 +1,14 @@
+C:\Users\dungs\Documents\GitHub\QuanLyDinhDuong\QuanLyDinhDuong\obj\Debug\QuanLyDinhDuong.csproj.AssemblyReference.cache
+C:\Users\dungs\Documents\GitHub\QuanLyDinhDuong\QuanLyDinhDuong\obj\Debug\Test_1.Form1.resources
+C:\Users\dungs\Documents\GitHub\QuanLyDinhDuong\QuanLyDinhDuong\obj\Debug\Test_1.Form2.resources
+C:\Users\dungs\Documents\GitHub\QuanLyDinhDuong\QuanLyDinhDuong\obj\Debug\Test_1.FormCon1.resources
+C:\Users\dungs\Documents\GitHub\QuanLyDinhDuong\QuanLyDinhDuong\obj\Debug\Test_1.Properties.Resources.resources
+C:\Users\dungs\Documents\GitHub\QuanLyDinhDuong\QuanLyDinhDuong\obj\Debug\QuanLyDinhDuong.csproj.GenerateResource.cache
+C:\Users\dungs\Documents\GitHub\QuanLyDinhDuong\QuanLyDinhDuong\obj\Debug\QuanLyDinhDuong.csproj.CoreCompileInputs.cache
+C:\Users\dungs\Documents\GitHub\QuanLyDinhDuong\QuanLyDinhDuong\obj\Debug\Test_1.exe
+C:\Users\dungs\Documents\GitHub\QuanLyDinhDuong\QuanLyDinhDuong\obj\Debug\Test_1.pdb
+C:\Users\dungs\Documents\GitHub\QuanLyDinhDuong\QuanLyDinhDuong\bin\Debug\Test_1.exe.config
+C:\Users\dungs\Documents\GitHub\QuanLyDinhDuong\QuanLyDinhDuong\bin\Debug\Test_1.exe
+C:\Users\dungs\Documents\GitHub\QuanLyDinhDuong\QuanLyDinhDuong\bin\Debug\Test_1.pdb
+C:\Users\dungs\Documents\GitHub\QuanLyDinhDuong\QuanLyDinhDuong\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\dungs\Documents\GitHub\QuanLyDinhDuong\QuanLyDinhDuong\obj\Debug\QuanLyDinhDuong.csproj.CopyComplete

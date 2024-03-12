@@ -12,3 +12,6 @@ C:\Users\dungs\Documents\GitHub\QuanLyDinhDuong\QuanLyDinhDuong\bin\Debug\Test_1
 C:\Users\dungs\Documents\GitHub\QuanLyDinhDuong\QuanLyDinhDuong\bin\Debug\Test_1.pdb
 C:\Users\dungs\Documents\GitHub\QuanLyDinhDuong\QuanLyDinhDuong\bin\Debug\FontAwesome.Sharp.dll
 C:\Users\dungs\Documents\GitHub\QuanLyDinhDuong\QuanLyDinhDuong\obj\Debug\QuanLyDinhDuong.csproj.CopyComplete
+C:\Users\dungs\Documents\GitHub\QuanLyDinhDuong\QuanLyDinhDuong\bin\Debug\CircularProgressBar.dll
+C:\Users\dungs\Documents\GitHub\QuanLyDinhDuong\QuanLyDinhDuong\bin\Debug\WinFormAnimation.dll
+C:\Users\dungs\Documents\GitHub\QuanLyDinhDuong\QuanLyDinhDuong\bin\Debug\CircularProgressBar.xml

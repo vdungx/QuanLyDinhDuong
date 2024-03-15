@@ -1,12 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Documents;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
@@ -38,7 +31,7 @@ namespace Test_1
             List<CheDoAn> ds = new List<CheDoAn>();
             cbbTuychon.DisplayMember = "Ten";
             cbbTuychon.ValueMember = "Ten"; // Chỉ định Ten làm giá trị cho mục được chọn
-            
+
             cbbTuychon.DataSource = ds;
 
         }
@@ -171,7 +164,7 @@ namespace Test_1
         {
             lbTongpt.Text = (value1 + value2 + value3).ToString() + "%";
             ControlEnable(true);
-            tbC.Enabled = true; 
+            tbC.Enabled = true;
             tbP.Enabled = true;
             tbF.Enabled = true;
         }
@@ -199,6 +192,7 @@ namespace Test_1
                 cbbTuychon.DisplayMember = "Ten";
                 // Select the newly added item in the combo box
                 cbbTuychon.SelectedIndex = ds.Count - 1;
+                tbTenCDA.Text = default;
             }
         }
 
@@ -227,9 +221,20 @@ namespace Test_1
             trackBar2.Value += 1;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ResetOptions()
         {
+            // Thiết lập giá trị mặc định cho TrackBar
+            trackBar1.Value = default;
+            trackBar2.Value = default;
+            trackBar3.Value = default;
 
+            // Thiết lập giá trị mặc định cho TextBox
+            tbC.Text = default;
+            tbP.Text = default;
+            tbF.Text = default;
+
+            // Thiết lập giá trị mặc định cho ComboBox
+            cbbTuychon.Text = " ";
         }
 
         private void btThem_Click(object sender, EventArgs e)
@@ -239,6 +244,7 @@ namespace Test_1
             tbP.Enabled = true;
             tbF.Enabled = true;
             ControlEnable(true);
+            ResetOptions();
         }
 
         private void tbC_TextChanged(object sender, EventArgs e)
@@ -277,7 +283,7 @@ namespace Test_1
                     trackBar1.Value = number;
                 }
             }
-            
+
         }
 
         private void tbP_TextChanged(object sender, EventArgs e)
@@ -364,9 +370,9 @@ namespace Test_1
                 CheDoAn selectedOption = (CheDoAn)cbbTuychon.SelectedItem;
 
                 // Kiểm tra xem tùy chọn đang được chọn có bị xóa không
-        bool isSelectedOptionRemoved = false;
-        if (selectedOption == cbbTuychon.SelectedItem)
-            isSelectedOptionRemoved = true;
+                bool isSelectedOptionRemoved = false;
+                if (selectedOption == cbbTuychon.SelectedItem)
+                    isSelectedOptionRemoved = true;
 
                 // Xóa tùy chọn khỏi danh sách nguồn dữ liệu
                 ds.Remove(selectedOption);
@@ -384,7 +390,32 @@ namespace Test_1
 
         private void btSua_Click(object sender, EventArgs e)
         {
+            button1.Visible = true;
+            ControlEnable(true);
+            tbTenCDA.Enabled = true;
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if ((value1 + value2 + value3) != 100)
+            {
+                MessageBox.Show("Tổng phần trăm không bằng 100%");
+            }
+            else
+            {
+                CheDoAn selectedOption = (CheDoAn)cbbTuychon.SelectedItem;
+
+                // Cập nhật giá trị chỉ số của tùy chọn từ các trường nhập liệu
+                selectedOption.Carbs = int.Parse(tbC.Text);
+                selectedOption.Protein = int.Parse(tbP.Text);
+                selectedOption.Fat = int.Parse(tbF.Text);
+
+                // Refresh combo box data source để hiển thị các thay đổi
+                cbbTuychon.DataSource = null;
+                cbbTuychon.DataSource = ds;
+                cbbTuychon.DisplayMember = "Ten";
+                button1.Visible = false;
+            }
         }
 
         private void btCongF_Click(object sender, EventArgs e)

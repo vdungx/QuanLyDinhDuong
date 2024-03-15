@@ -28,26 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lbtrack3 = new System.Windows.Forms.Label();
-            this.lbtrack2 = new System.Windows.Forms.Label();
-            this.lbtrack1 = new System.Windows.Forms.Label();
-            this.trackBar3 = new System.Windows.Forms.TrackBar();
-            this.trackBar2 = new System.Windows.Forms.TrackBar();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btTruC = new System.Windows.Forms.Button();
-            this.btTruP = new System.Windows.Forms.Button();
-            this.btTruF = new System.Windows.Forms.Button();
-            this.btCongC = new System.Windows.Forms.Button();
-            this.btCongP = new System.Windows.Forms.Button();
-            this.btCongF = new System.Windows.Forms.Button();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tbCalo = new System.Windows.Forms.TextBox();
             this.btCongcl = new System.Windows.Forms.Button();
@@ -61,8 +44,23 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cbbTuychon = new System.Windows.Forms.ComboBox();
-            this.btLuu = new System.Windows.Forms.Button();
-            this.btThem = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.trackBar3 = new System.Windows.Forms.TrackBar();
+            this.lbtrack1 = new System.Windows.Forms.Label();
+            this.lbtrack2 = new System.Windows.Forms.Label();
+            this.lbtrack3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btTruC = new System.Windows.Forms.Button();
+            this.btTruP = new System.Windows.Forms.Button();
+            this.btTruF = new System.Windows.Forms.Button();
+            this.btCongC = new System.Windows.Forms.Button();
+            this.btCongP = new System.Windows.Forms.Button();
+            this.btCongF = new System.Windows.Forms.Button();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.lbTongpt = new System.Windows.Forms.Label();
             this.lbgC = new System.Windows.Forms.Label();
             this.lbgP = new System.Windows.Forms.Label();
@@ -71,204 +69,24 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.tbC = new System.Windows.Forms.TextBox();
+            this.btThem = new System.Windows.Forms.Button();
             this.tbP = new System.Windows.Forms.TextBox();
             this.tbF = new System.Windows.Forms.TextBox();
             this.btSua = new System.Windows.Forms.Button();
+            this.btLuu = new System.Windows.Forms.Button();
             this.btXoa = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trbCalo)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(417, 428);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(26, 16);
-            this.label6.TabIndex = 33;
-            this.label6.Text = "Fat";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(417, 371);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 16);
-            this.label5.TabIndex = 32;
-            this.label5.Text = "Protein";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(417, 328);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 16);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "Carbs";
-            // 
-            // lbtrack3
-            // 
-            this.lbtrack3.AutoSize = true;
-            this.lbtrack3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbtrack3.Location = new System.Drawing.Point(826, 425);
-            this.lbtrack3.Name = "lbtrack3";
-            this.lbtrack3.Size = new System.Drawing.Size(26, 16);
-            this.lbtrack3.TabIndex = 29;
-            this.lbtrack3.Text = "0%";
-            // 
-            // lbtrack2
-            // 
-            this.lbtrack2.AutoSize = true;
-            this.lbtrack2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbtrack2.Location = new System.Drawing.Point(826, 371);
-            this.lbtrack2.Name = "lbtrack2";
-            this.lbtrack2.Size = new System.Drawing.Size(26, 16);
-            this.lbtrack2.TabIndex = 28;
-            this.lbtrack2.Text = "0%";
-            // 
-            // lbtrack1
-            // 
-            this.lbtrack1.AutoSize = true;
-            this.lbtrack1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbtrack1.Location = new System.Drawing.Point(826, 323);
-            this.lbtrack1.Name = "lbtrack1";
-            this.lbtrack1.Size = new System.Drawing.Size(26, 16);
-            this.lbtrack1.TabIndex = 27;
-            this.lbtrack1.Text = "0%";
-            // 
-            // trackBar3
-            // 
-            this.trackBar3.Location = new System.Drawing.Point(511, 422);
-            this.trackBar3.Maximum = 100;
-            this.trackBar3.Name = "trackBar3";
-            this.trackBar3.Size = new System.Drawing.Size(259, 45);
-            this.trackBar3.TabIndex = 26;
-            this.trackBar3.ValueChanged += new System.EventHandler(this.trackBar3_ValueChanged);
-            // 
-            // trackBar2
-            // 
-            this.trackBar2.Location = new System.Drawing.Point(511, 371);
-            this.trackBar2.Maximum = 100;
-            this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(259, 45);
-            this.trackBar2.TabIndex = 25;
-            this.trackBar2.ValueChanged += new System.EventHandler(this.trackBar2_ValueChanged);
-            // 
-            // trackBar1
-            // 
-            this.trackBar1.Location = new System.Drawing.Point(511, 320);
-            this.trackBar1.Maximum = 100;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(259, 45);
-            this.trackBar1.TabIndex = 24;
-            this.trackBar1.ValueChanged += new System.EventHandler(this.trackBar1_ValueChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 154);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 13);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "Tùy chỉnh";
-            // 
-            // btTruC
-            // 
-            this.btTruC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btTruC.Location = new System.Drawing.Point(472, 320);
-            this.btTruC.Name = "btTruC";
-            this.btTruC.Size = new System.Drawing.Size(33, 23);
-            this.btTruC.TabIndex = 37;
-            this.btTruC.Text = "-";
-            this.btTruC.UseVisualStyleBackColor = true;
-            this.btTruC.Click += new System.EventHandler(this.btTruC_Click);
-            // 
-            // btTruP
-            // 
-            this.btTruP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btTruP.Location = new System.Drawing.Point(472, 368);
-            this.btTruP.Name = "btTruP";
-            this.btTruP.Size = new System.Drawing.Size(33, 23);
-            this.btTruP.TabIndex = 38;
-            this.btTruP.Text = "-";
-            this.btTruP.UseVisualStyleBackColor = true;
-            this.btTruP.Click += new System.EventHandler(this.btTruP_Click);
-            // 
-            // btTruF
-            // 
-            this.btTruF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btTruF.Location = new System.Drawing.Point(472, 425);
-            this.btTruF.Name = "btTruF";
-            this.btTruF.Size = new System.Drawing.Size(33, 23);
-            this.btTruF.TabIndex = 39;
-            this.btTruF.Text = "-";
-            this.btTruF.UseVisualStyleBackColor = true;
-            this.btTruF.Click += new System.EventHandler(this.btTruF_Click);
-            // 
-            // btCongC
-            // 
-            this.btCongC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCongC.Location = new System.Drawing.Point(776, 321);
-            this.btCongC.Name = "btCongC";
-            this.btCongC.Size = new System.Drawing.Size(33, 23);
-            this.btCongC.TabIndex = 40;
-            this.btCongC.Text = "+";
-            this.btCongC.UseVisualStyleBackColor = true;
-            this.btCongC.Click += new System.EventHandler(this.btCongC_Click);
-            // 
-            // btCongP
-            // 
-            this.btCongP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCongP.Location = new System.Drawing.Point(776, 368);
-            this.btCongP.Name = "btCongP";
-            this.btCongP.Size = new System.Drawing.Size(33, 23);
-            this.btCongP.TabIndex = 41;
-            this.btCongP.Text = "+";
-            this.btCongP.UseVisualStyleBackColor = true;
-            this.btCongP.Click += new System.EventHandler(this.btCongP_Click);
-            // 
-            // btCongF
-            // 
-            this.btCongF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCongF.Location = new System.Drawing.Point(776, 422);
-            this.btCongF.Name = "btCongF";
-            this.btCongF.Size = new System.Drawing.Size(33, 23);
-            this.btCongF.TabIndex = 42;
-            this.btCongF.Text = "+";
-            this.btCongF.UseVisualStyleBackColor = true;
-            this.btCongF.Click += new System.EventHandler(this.btCongF_Click);
-            // 
-            // chart1
-            // 
-            this.chart1.BackColor = System.Drawing.Color.Transparent;
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(0, 183);
-            this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(411, 342);
-            this.chart1.TabIndex = 48;
-            this.chart1.Text = "chart1";
             // 
             // panel1
             // 
@@ -280,20 +98,22 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(957, 56);
+            this.panel1.Size = new System.Drawing.Size(945, 56);
             this.panel1.TabIndex = 49;
             // 
             // tbCalo
             // 
+            this.tbCalo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.tbCalo.Location = new System.Drawing.Point(470, 20);
             this.tbCalo.Name = "tbCalo";
-            this.tbCalo.Size = new System.Drawing.Size(55, 20);
+            this.tbCalo.Size = new System.Drawing.Size(61, 20);
             this.tbCalo.TabIndex = 43;
             this.tbCalo.TextChanged += new System.EventHandler(this.tbCalo_TextChanged);
             this.tbCalo.Leave += new System.EventHandler(this.tbCalo_Leave);
             // 
             // btCongcl
             // 
+            this.btCongcl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btCongcl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCongcl.Location = new System.Drawing.Point(418, 18);
             this.btCongcl.Name = "btCongcl";
@@ -305,6 +125,7 @@
             // 
             // ttTrucl
             // 
+            this.ttTrucl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ttTrucl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ttTrucl.Location = new System.Drawing.Point(137, 18);
             this.ttTrucl.Name = "ttTrucl";
@@ -316,6 +137,7 @@
             // 
             // trbCalo
             // 
+            this.trbCalo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.trbCalo.Location = new System.Drawing.Point(176, 8);
             this.trbCalo.Maximum = 5000;
             this.trbCalo.Name = "trbCalo";
@@ -325,6 +147,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(17, 23);
@@ -335,6 +158,7 @@
             // 
             // btCustom
             // 
+            this.btCustom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btCustom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCustom.Location = new System.Drawing.Point(829, 27);
             this.btCustom.Name = "btCustom";
@@ -355,11 +179,12 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 56);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(957, 65);
+            this.panel2.Size = new System.Drawing.Size(945, 65);
             this.panel2.TabIndex = 50;
             // 
             // label11
             // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(803, 11);
             this.label11.Name = "label11";
@@ -369,6 +194,7 @@
             // 
             // tbTenCDA
             // 
+            this.tbTenCDA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.tbTenCDA.Location = new System.Drawing.Point(654, 35);
             this.tbTenCDA.Name = "tbTenCDA";
             this.tbTenCDA.Size = new System.Drawing.Size(131, 20);
@@ -376,6 +202,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(537, 35);
@@ -386,6 +213,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(17, 24);
@@ -396,6 +224,7 @@
             // 
             // cbbTuychon
             // 
+            this.cbbTuychon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.cbbTuychon.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbbTuychon.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbbTuychon.FormattingEnabled = true;
@@ -405,30 +234,209 @@
             this.cbbTuychon.TabIndex = 48;
             this.cbbTuychon.SelectedIndexChanged += new System.EventHandler(this.cbbTuychon_SelectedIndexChanged);
             // 
-            // btLuu
+            // label3
             // 
-            this.btLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLuu.Location = new System.Drawing.Point(815, 466);
-            this.btLuu.Name = "btLuu";
-            this.btLuu.Size = new System.Drawing.Size(90, 34);
-            this.btLuu.TabIndex = 53;
-            this.btLuu.Text = "Lưu";
-            this.btLuu.UseVisualStyleBackColor = true;
-            this.btLuu.Click += new System.EventHandler(this.btLuu_Click);
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(17, 154);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Tùy chỉnh";
             // 
-            // btThem
+            // trackBar1
             // 
-            this.btThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThem.Location = new System.Drawing.Point(528, 143);
-            this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(106, 35);
-            this.btThem.TabIndex = 50;
-            this.btThem.Text = "Thêm tùy chọn";
-            this.btThem.UseVisualStyleBackColor = true;
-            this.btThem.Click += new System.EventHandler(this.btThem_Click);
+            this.trackBar1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.trackBar1.Location = new System.Drawing.Point(511, 320);
+            this.trackBar1.Maximum = 100;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(259, 45);
+            this.trackBar1.TabIndex = 24;
+            this.trackBar1.ValueChanged += new System.EventHandler(this.trackBar1_ValueChanged);
+            // 
+            // trackBar2
+            // 
+            this.trackBar2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.trackBar2.Location = new System.Drawing.Point(511, 371);
+            this.trackBar2.Maximum = 100;
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Size = new System.Drawing.Size(259, 45);
+            this.trackBar2.TabIndex = 25;
+            this.trackBar2.ValueChanged += new System.EventHandler(this.trackBar2_ValueChanged);
+            // 
+            // trackBar3
+            // 
+            this.trackBar3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.trackBar3.Location = new System.Drawing.Point(511, 422);
+            this.trackBar3.Maximum = 100;
+            this.trackBar3.Name = "trackBar3";
+            this.trackBar3.Size = new System.Drawing.Size(259, 45);
+            this.trackBar3.TabIndex = 26;
+            this.trackBar3.ValueChanged += new System.EventHandler(this.trackBar3_ValueChanged);
+            // 
+            // lbtrack1
+            // 
+            this.lbtrack1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbtrack1.AutoSize = true;
+            this.lbtrack1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbtrack1.Location = new System.Drawing.Point(826, 323);
+            this.lbtrack1.Name = "lbtrack1";
+            this.lbtrack1.Size = new System.Drawing.Size(26, 16);
+            this.lbtrack1.TabIndex = 27;
+            this.lbtrack1.Text = "0%";
+            // 
+            // lbtrack2
+            // 
+            this.lbtrack2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbtrack2.AutoSize = true;
+            this.lbtrack2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbtrack2.Location = new System.Drawing.Point(826, 371);
+            this.lbtrack2.Name = "lbtrack2";
+            this.lbtrack2.Size = new System.Drawing.Size(26, 16);
+            this.lbtrack2.TabIndex = 28;
+            this.lbtrack2.Text = "0%";
+            // 
+            // lbtrack3
+            // 
+            this.lbtrack3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbtrack3.AutoSize = true;
+            this.lbtrack3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbtrack3.Location = new System.Drawing.Point(826, 425);
+            this.lbtrack3.Name = "lbtrack3";
+            this.lbtrack3.Size = new System.Drawing.Size(26, 16);
+            this.lbtrack3.TabIndex = 29;
+            this.lbtrack3.Text = "0%";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(417, 328);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(43, 16);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "Carbs";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(417, 371);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 16);
+            this.label5.TabIndex = 32;
+            this.label5.Text = "Protein";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(417, 428);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(26, 16);
+            this.label6.TabIndex = 33;
+            this.label6.Text = "Fat";
+            // 
+            // btTruC
+            // 
+            this.btTruC.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btTruC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTruC.Location = new System.Drawing.Point(472, 320);
+            this.btTruC.Name = "btTruC";
+            this.btTruC.Size = new System.Drawing.Size(33, 23);
+            this.btTruC.TabIndex = 37;
+            this.btTruC.Text = "-";
+            this.btTruC.UseVisualStyleBackColor = true;
+            this.btTruC.Click += new System.EventHandler(this.btTruC_Click);
+            // 
+            // btTruP
+            // 
+            this.btTruP.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btTruP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTruP.Location = new System.Drawing.Point(472, 368);
+            this.btTruP.Name = "btTruP";
+            this.btTruP.Size = new System.Drawing.Size(33, 23);
+            this.btTruP.TabIndex = 38;
+            this.btTruP.Text = "-";
+            this.btTruP.UseVisualStyleBackColor = true;
+            this.btTruP.Click += new System.EventHandler(this.btTruP_Click);
+            // 
+            // btTruF
+            // 
+            this.btTruF.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btTruF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTruF.Location = new System.Drawing.Point(472, 425);
+            this.btTruF.Name = "btTruF";
+            this.btTruF.Size = new System.Drawing.Size(33, 23);
+            this.btTruF.TabIndex = 39;
+            this.btTruF.Text = "-";
+            this.btTruF.UseVisualStyleBackColor = true;
+            this.btTruF.Click += new System.EventHandler(this.btTruF_Click);
+            // 
+            // btCongC
+            // 
+            this.btCongC.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btCongC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCongC.Location = new System.Drawing.Point(776, 321);
+            this.btCongC.Name = "btCongC";
+            this.btCongC.Size = new System.Drawing.Size(33, 23);
+            this.btCongC.TabIndex = 40;
+            this.btCongC.Text = "+";
+            this.btCongC.UseVisualStyleBackColor = true;
+            this.btCongC.Click += new System.EventHandler(this.btCongC_Click);
+            // 
+            // btCongP
+            // 
+            this.btCongP.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btCongP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCongP.Location = new System.Drawing.Point(776, 368);
+            this.btCongP.Name = "btCongP";
+            this.btCongP.Size = new System.Drawing.Size(33, 23);
+            this.btCongP.TabIndex = 41;
+            this.btCongP.Text = "+";
+            this.btCongP.UseVisualStyleBackColor = true;
+            this.btCongP.Click += new System.EventHandler(this.btCongP_Click);
+            // 
+            // btCongF
+            // 
+            this.btCongF.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btCongF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCongF.Location = new System.Drawing.Point(776, 422);
+            this.btCongF.Name = "btCongF";
+            this.btCongF.Size = new System.Drawing.Size(33, 23);
+            this.btCongF.TabIndex = 42;
+            this.btCongF.Text = "+";
+            this.btCongF.UseVisualStyleBackColor = true;
+            this.btCongF.Click += new System.EventHandler(this.btCongF_Click);
+            // 
+            // chart1
+            // 
+            this.chart1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.chart1.BackColor = System.Drawing.Color.Transparent;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(1, 170);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(411, 342);
+            this.chart1.TabIndex = 48;
+            this.chart1.Text = "chart1";
             // 
             // lbTongpt
             // 
+            this.lbTongpt.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbTongpt.AutoSize = true;
             this.lbTongpt.BackColor = System.Drawing.Color.Transparent;
             this.lbTongpt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -441,6 +449,7 @@
             // 
             // lbgC
             // 
+            this.lbgC.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbgC.AutoSize = true;
             this.lbgC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbgC.Location = new System.Drawing.Point(868, 323);
@@ -451,6 +460,7 @@
             // 
             // lbgP
             // 
+            this.lbgP.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbgP.AutoSize = true;
             this.lbgP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbgP.Location = new System.Drawing.Point(868, 375);
@@ -461,6 +471,7 @@
             // 
             // lbgF
             // 
+            this.lbgF.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbgF.AutoSize = true;
             this.lbgF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbgF.Location = new System.Drawing.Point(868, 425);
@@ -471,6 +482,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(17, 131);
             this.label8.Name = "label8";
@@ -480,6 +492,7 @@
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(118, 131);
             this.label9.Name = "label9";
@@ -489,6 +502,7 @@
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(224, 131);
             this.label10.Name = "label10";
@@ -498,14 +512,28 @@
             // 
             // tbC
             // 
+            this.tbC.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tbC.Location = new System.Drawing.Point(57, 127);
             this.tbC.Name = "tbC";
             this.tbC.Size = new System.Drawing.Size(34, 20);
             this.tbC.TabIndex = 58;
             this.tbC.TextChanged += new System.EventHandler(this.tbC_TextChanged);
             // 
+            // btThem
+            // 
+            this.btThem.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThem.Location = new System.Drawing.Point(528, 143);
+            this.btThem.Name = "btThem";
+            this.btThem.Size = new System.Drawing.Size(106, 35);
+            this.btThem.TabIndex = 50;
+            this.btThem.Text = "Thêm tùy chọn";
+            this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
+            // 
             // tbP
             // 
+            this.tbP.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tbP.Location = new System.Drawing.Point(164, 128);
             this.tbP.Name = "tbP";
             this.tbP.Size = new System.Drawing.Size(34, 20);
@@ -514,6 +542,7 @@
             // 
             // tbF
             // 
+            this.tbF.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tbF.Location = new System.Drawing.Point(252, 127);
             this.tbF.Name = "tbF";
             this.tbF.Size = new System.Drawing.Size(34, 20);
@@ -522,6 +551,7 @@
             // 
             // btSua
             // 
+            this.btSua.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btSua.Location = new System.Drawing.Point(669, 144);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(101, 34);
@@ -530,8 +560,21 @@
             this.btSua.UseVisualStyleBackColor = true;
             this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
+            // btLuu
+            // 
+            this.btLuu.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLuu.Location = new System.Drawing.Point(815, 466);
+            this.btLuu.Name = "btLuu";
+            this.btLuu.Size = new System.Drawing.Size(90, 34);
+            this.btLuu.TabIndex = 53;
+            this.btLuu.Text = "Lưu";
+            this.btLuu.UseVisualStyleBackColor = true;
+            this.btLuu.Click += new System.EventHandler(this.btLuu_Click);
+            // 
             // btXoa
             // 
+            this.btXoa.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btXoa.Location = new System.Drawing.Point(817, 143);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(98, 34);
@@ -542,6 +585,7 @@
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(97, 131);
@@ -552,6 +596,7 @@
             // 
             // label13
             // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(204, 131);
@@ -562,6 +607,7 @@
             // 
             // label14
             // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(292, 131);
@@ -570,11 +616,24 @@
             this.label14.TabIndex = 64;
             this.label14.Text = "%";
             // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.Location = new System.Drawing.Point(670, 184);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 29);
+            this.button1.TabIndex = 65;
+            this.button1.Text = "Lưu";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(957, 521);
+            this.ClientSize = new System.Drawing.Size(945, 506);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -614,31 +673,44 @@
             this.Name = "Form2";
             this.Text = "Macro";
             this.Load += new System.EventHandler(this.Form2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trbCalo)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lbtrack3;
-        private System.Windows.Forms.Label lbtrack2;
-        private System.Windows.Forms.Label lbtrack1;
-        private System.Windows.Forms.TrackBar trackBar3;
-        private System.Windows.Forms.TrackBar trackBar2;
-        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox tbTenCDA;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cbbTuychon;
+        private System.Windows.Forms.Button btCustom;
+        private System.Windows.Forms.TrackBar trbCalo;
+        private System.Windows.Forms.Button btCongcl;
+        private System.Windows.Forms.Button ttTrucl;
+        private System.Windows.Forms.TextBox tbCalo;
+        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar trackBar2;
+        private System.Windows.Forms.TrackBar trackBar3;
+        private System.Windows.Forms.Label lbtrack1;
+        private System.Windows.Forms.Label lbtrack2;
+        private System.Windows.Forms.Label lbtrack3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btTruC;
         private System.Windows.Forms.Button btTruP;
         private System.Windows.Forms.Button btTruF;
@@ -646,35 +718,23 @@
         private System.Windows.Forms.Button btCongP;
         private System.Windows.Forms.Button btCongF;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btLuu;
-        private System.Windows.Forms.TextBox tbTenCDA;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btThem;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cbbTuychon;
         private System.Windows.Forms.Label lbTongpt;
-        private System.Windows.Forms.Button btCustom;
-        private System.Windows.Forms.TrackBar trbCalo;
-        private System.Windows.Forms.Button btCongcl;
-        private System.Windows.Forms.Button ttTrucl;
         private System.Windows.Forms.Label lbgC;
         private System.Windows.Forms.Label lbgP;
         private System.Windows.Forms.Label lbgF;
-        private System.Windows.Forms.TextBox tbCalo;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox tbC;
+        private System.Windows.Forms.Button btThem;
         private System.Windows.Forms.TextBox tbP;
         private System.Windows.Forms.TextBox tbF;
         private System.Windows.Forms.Button btSua;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btLuu;
         private System.Windows.Forms.Button btXoa;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button button1;
     }
 }

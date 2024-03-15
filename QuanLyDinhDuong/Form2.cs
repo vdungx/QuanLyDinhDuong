@@ -14,6 +14,7 @@ namespace Test_1
 {
     public partial class Form2 : Form
     {
+
         private void ControlEnable(bool check)
         {
             trackBar1.Enabled = check;
@@ -34,40 +35,21 @@ namespace Test_1
         public Form2()
         {
             InitializeComponent();
-            //ds = new List<CheDoAn>()
-            //{
-            //    new CheDoAn(){Ten = "LowCarbs", Carbs = 5, Protein = 60, Fat = 35},
-            //    new CheDoAn(){ Ten = "HighCarbs", Carbs = 20, Protein = 40, Fat = 40},
-            //};
-            //cbbTuychon.DataSource = ds;
-            //cbbTuychon.DisplayMember = "Ten";
-            //addBinding();
-        }
+            List<CheDoAn> ds = new List<CheDoAn>();
+            cbbTuychon.DisplayMember = "Ten";
+            cbbTuychon.ValueMember = "Ten"; // Chỉ định Ten làm giá trị cho mục được chọn
+            
+            cbbTuychon.DataSource = ds;
 
-        void addBinding()
-        {
-            tbC.DataBindings.Add(new Binding("Text", cbbTuychon.DataSource, "Carbs"));
-            tbP.DataBindings.Add(new Binding("Text", cbbTuychon.DataSource, "Protein"));
-            tbF.DataBindings.Add(new Binding("Text", cbbTuychon.DataSource, "Fat"));
-            trackBar1.DataBindings.Add(new Binding("Value", cbbTuychon.DataSource, "Carbs"));
-            trackBar2.DataBindings.Add(new Binding("Value", cbbTuychon.DataSource, "Protein"));
-            trackBar3.DataBindings.Add(new Binding("Value", cbbTuychon.DataSource, "Fat"));
         }
-
 
         private void Form2_Load(object sender, EventArgs e)
         {
             value1 = trackBar1.Value;
             value2 = trackBar2.Value;
             value3 = trackBar3.Value;
-            cbbTuychon.Items.Add("Tùy chọn 1");
-            cbbTuychon.Items.Add("Tùy chọn 2");
-            cbbTuychon.Items.Add("Tùy chọn 3");
-
 
             cbbTuychon.SelectedIndexChanged += cbbTuychon_SelectedIndexChanged;
-
-
 
             // Thêm series vào khu vực biểu đồ dạng Doughnut
             Series doughnutSeries = new Series("DoughnutSeries");
@@ -85,13 +67,18 @@ namespace Test_1
 
             chart1.Invalidate();
 
-
-            cbbTuychon.SelectedIndex = 0;
+            //cbbTuychon.SelectedIndex = 0;
             lbTongpt.Text = (value1 + value2 + value3).ToString() + "%";
             ControlEnable(false);
             tbC.Enabled = false;
             tbP.Enabled = false;
             tbF.Enabled = false;
+            tbTenCDA.Enabled = false;
+
+            ds.Add(new CheDoAn("Low Carbs", 20, 40, 40));
+            ds.Add(new CheDoAn("High Carbs", 40, 30, 30));
+            cbbTuychon.DataSource = ds;
+
         }
 
         private void trackBar1_ValueChanged(object sender, EventArgs e)
@@ -195,6 +182,24 @@ namespace Test_1
             {
                 MessageBox.Show("Tổng phần trăm không bằng 100%");
             }
+            else
+            {
+                CheDoAn newOption = new CheDoAn("", 0, 0, 0)
+                {
+                    Ten = tbTenCDA.Text.ToString(),
+                    Carbs = value1,
+                    Protein = value2,
+                    Fat = value3,
+                };
+
+                ds.Add(newOption);
+                // Refresh the combo box data source
+                cbbTuychon.DataSource = null; // Clear the current data source
+                cbbTuychon.DataSource = ds;
+                cbbTuychon.DisplayMember = "Ten";
+                // Select the newly added item in the combo box
+                cbbTuychon.SelectedIndex = ds.Count - 1;
+            }
         }
 
         private void btTruC_Click(object sender, EventArgs e)
@@ -224,35 +229,162 @@ namespace Test_1
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btThem_Click(object sender, EventArgs e)
+        {
+            tbTenCDA.Enabled = true;
             tbC.Enabled = true;
             tbP.Enabled = true;
             tbF.Enabled = true;
             ControlEnable(true);
         }
 
-        private void btThem_Click(object sender, EventArgs e)
-        {
-            ds = new List<CheDoAn>()
-            {
-                new CheDoAn(){Ten = textBox5.Text, Carbs = Convert.ToInt16(tbC.Text), Protein = Convert.ToInt16(tbP.Text), Fat = Convert.ToInt16(tbF.Text)}
-            };
-            cbbTuychon.DataSource = ds;
-            cbbTuychon.DisplayMember = "Ten";
-        }
-
         private void tbC_TextChanged(object sender, EventArgs e)
         {
-            trackBar1.Value = Convert.ToInt32(tbC.Text);
+            TextBox textBox = (TextBox)sender;
+            string input = textBox.Text;
+
+            // Kiểm tra nếu giá trị là null hoặc rỗng
+            if (string.IsNullOrEmpty(input))
+            {
+                tbC.Text = "0";
+                tbC.SelectAll();
+            }
+            else
+            {
+                // Kiểm tra nếu giá trị không phải số
+                if (!int.TryParse(input, out int number))
+                {
+                    MessageBox.Show("Vui lòng nhập một số nguyên vào TextBox.");
+                    textBox.Text = string.Empty; // Xóa nội dung TextBox
+                    tbC.Focus();
+                }
+                else
+                {
+                    if (number < trackBar1.Minimum)
+                    {
+                        number = trackBar1.Minimum;
+                        tbC.Text = number.ToString();
+                    }
+                    else if (number > trackBar1.Maximum)
+                    {
+                        number = trackBar1.Maximum;
+                        tbC.Text = number.ToString();
+                    }
+
+                    trackBar1.Value = number;
+                }
+            }
+            
         }
 
         private void tbP_TextChanged(object sender, EventArgs e)
         {
-            trackBar2.Value = Convert.ToInt32(tbP.Text);
+            TextBox textBox = (TextBox)sender;
+            string input = textBox.Text;
+
+            // Kiểm tra nếu giá trị là null hoặc rỗng
+            if (string.IsNullOrEmpty(input))
+            {
+                tbP.Text = "0";
+                tbP.SelectAll();
+            }
+            else
+            {
+                // Kiểm tra nếu giá trị không phải số
+                if (!int.TryParse(input, out int number))
+                {
+                    MessageBox.Show("Vui lòng nhập một số nguyên vào TextBox.");
+                    textBox.Text = string.Empty; // Xóa nội dung TextBox
+                    tbP.Focus();
+                }
+                else
+                {
+                    if (number < trackBar2.Minimum)
+                    {
+                        number = trackBar2.Minimum;
+                        tbP.Text = number.ToString();
+                    }
+                    else if (number > trackBar2.Maximum)
+                    {
+                        number = trackBar1.Maximum;
+                        tbP.Text = number.ToString();
+                    }
+
+                    trackBar2.Value = number;
+                }
+            }
         }
 
         private void tbF_TextChanged(object sender, EventArgs e)
         {
-            trackBar3.Value = Convert.ToInt32(tbF.Text);
+            TextBox textBox = (TextBox)sender;
+            string input = textBox.Text;
+
+            // Kiểm tra nếu giá trị là null hoặc rỗng
+            if (string.IsNullOrEmpty(input))
+            {
+                tbF.Text = "0";
+                tbF.SelectAll();
+            }
+            else
+            {
+                // Kiểm tra nếu giá trị không phải số
+                if (!int.TryParse(input, out int number))
+                {
+                    MessageBox.Show("Vui lòng nhập một số nguyên vào TextBox.");
+                    textBox.Text = string.Empty; // Xóa nội dung TextBox
+                    tbF.Focus();
+                }
+                else
+                {
+                    if (number < trackBar3.Minimum)
+                    {
+                        number = trackBar3.Minimum;
+                        tbF.Text = number.ToString();
+                    }
+                    else if (number > trackBar3.Maximum)
+                    {
+                        number = trackBar3.Maximum;
+                        tbF.Text = number.ToString();
+                    }
+
+                    trackBar3.Value = number;
+                }
+            }
+        }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            if (cbbTuychon.SelectedIndex >= 0)
+            {
+                // Lấy tùy chọn được chọn
+                CheDoAn selectedOption = (CheDoAn)cbbTuychon.SelectedItem;
+
+                // Kiểm tra xem tùy chọn đang được chọn có bị xóa không
+        bool isSelectedOptionRemoved = false;
+        if (selectedOption == cbbTuychon.SelectedItem)
+            isSelectedOptionRemoved = true;
+
+                // Xóa tùy chọn khỏi danh sách nguồn dữ liệu
+                ds.Remove(selectedOption);
+
+                // Cập nhật lại combobox
+                cbbTuychon.DataSource = null;
+                cbbTuychon.DataSource = ds;
+                cbbTuychon.DisplayMember = "Ten";
+
+                // Thiết lập lại selectedIndex nếu cần
+                if (isSelectedOptionRemoved && cbbTuychon.Items.Count > 0)
+                    cbbTuychon.SelectedIndex = 0;
+            }
+        }
+
+        private void btSua_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void btCongF_Click(object sender, EventArgs e)
@@ -272,27 +404,12 @@ namespace Test_1
         }
         private void cbbTuychon_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string selectedOption = cbbTuychon.SelectedItem as string;
-            if (selectedOption == "Tùy chọn 1")
+            if (cbbTuychon.SelectedIndex >= 0)
             {
-                // Thiết lập giá trị cho các TrackBar khi chọn "Tùy chọn 1"
-                trackBar1.Value = 40;
-                trackBar2.Value = 30;
-                trackBar3.Value = 30;
-            }
-            else if (selectedOption == "Tùy chọn 2")
-            {
-                // Thiết lập giá trị cho các TrackBar khi chọn "Tùy chọn 2"
-                trackBar1.Value = 20;
-                trackBar2.Value = 40;
-                trackBar3.Value = 40;
-            }
-            else if (selectedOption == "Tùy chọn 3")
-            {
-                // Thiết lập giá trị cho các TrackBar khi chọn "Tùy chọn 3"
-                trackBar1.Value = 50;
-                trackBar2.Value = 25;
-                trackBar3.Value = 25;
+                CheDoAn selectedOptionItem = (CheDoAn)cbbTuychon.SelectedItem;
+                trackBar1.Value = selectedOptionItem.Carbs;
+                trackBar2.Value = selectedOptionItem.Protein;
+                trackBar3.Value = selectedOptionItem.Fat;
             }
         }
     }

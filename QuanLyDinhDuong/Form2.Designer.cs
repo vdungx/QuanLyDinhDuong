@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -57,7 +57,7 @@
             this.btCustom = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbTenCDA = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cbbTuychon = new System.Windows.Forms.ComboBox();
@@ -73,8 +73,8 @@
             this.tbC = new System.Windows.Forms.TextBox();
             this.tbP = new System.Windows.Forms.TextBox();
             this.tbF = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btSua = new System.Windows.Forms.Button();
+            this.btXoa = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -255,17 +255,17 @@
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.Transparent;
-            chartArea5.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chart1.Legends.Add(legend5);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(0, 183);
             this.chart1.Name = "chart1";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chart1.Series.Add(series5);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(411, 342);
             this.chart1.TabIndex = 48;
             this.chart1.Text = "chart1";
@@ -347,7 +347,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.textBox5);
+            this.panel2.Controls.Add(this.tbTenCDA);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.cbbTuychon);
@@ -367,12 +367,12 @@
             this.label11.TabIndex = 44;
             this.label11.Text = "Custom macro của riêng bạn";
             // 
-            // textBox5
+            // tbTenCDA
             // 
-            this.textBox5.Location = new System.Drawing.Point(654, 35);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(131, 20);
-            this.textBox5.TabIndex = 52;
+            this.tbTenCDA.Location = new System.Drawing.Point(654, 35);
+            this.tbTenCDA.Name = "tbTenCDA";
+            this.tbTenCDA.Size = new System.Drawing.Size(131, 20);
+            this.tbTenCDA.TabIndex = 52;
             // 
             // label7
             // 
@@ -520,24 +520,25 @@
             this.tbF.TabIndex = 60;
             this.tbF.TextChanged += new System.EventHandler(this.tbF_TextChanged);
             // 
-            // button1
+            // btSua
             // 
-            this.button1.Location = new System.Drawing.Point(669, 144);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 34);
-            this.button1.TabIndex = 54;
-            this.button1.Text = "Sửa";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btSua.Location = new System.Drawing.Point(669, 144);
+            this.btSua.Name = "btSua";
+            this.btSua.Size = new System.Drawing.Size(101, 34);
+            this.btSua.TabIndex = 54;
+            this.btSua.Text = "Sửa";
+            this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
-            // button2
+            // btXoa
             // 
-            this.button2.Location = new System.Drawing.Point(817, 143);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(98, 34);
-            this.button2.TabIndex = 61;
-            this.button2.Text = "Xóa";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btXoa.Location = new System.Drawing.Point(817, 143);
+            this.btXoa.Name = "btXoa";
+            this.btXoa.Size = new System.Drawing.Size(98, 34);
+            this.btXoa.TabIndex = 61;
+            this.btXoa.Text = "Xóa";
+            this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // label12
             // 
@@ -577,9 +578,9 @@
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btXoa);
             this.Controls.Add(this.btLuu);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btSua);
             this.Controls.Add(this.tbF);
             this.Controls.Add(this.tbP);
             this.Controls.Add(this.btThem);
@@ -649,7 +650,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btLuu;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbTenCDA;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btThem;
         private System.Windows.Forms.Label label2;
@@ -669,9 +670,9 @@
         private System.Windows.Forms.TextBox tbC;
         private System.Windows.Forms.TextBox tbP;
         private System.Windows.Forms.TextBox tbF;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btSua;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btXoa;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;

@@ -54,5 +54,10 @@ namespace Test_1
         {
 
         }
+
+        private void Settings_Click(object sender, EventArgs e)
+        {
+            OpenchildForm(new Form3());
+        }
     }
 }
